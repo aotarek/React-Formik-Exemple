@@ -1,0 +1,30 @@
+.header {
+  border-bottom: 1px solid #525788;
+  padding: 20px;
+  &__menu {
+    ul {
+      text-align: center;
+      li {
+        a {
+          color: #8387a8;
+        }
+
+        display: inline-block;
+        margin-right: 20px;
+      }
+      .active {
+        color: white;
+        &:after {
+          content: '';
+          width: 100%;
+          display: block;
+
+          position: relative;
+          top: 23px;
+
+          border-bottom: 4px solid white;
+        }
+      }
+    }
+  }
+}
